@@ -528,5 +528,5 @@ i{
 .project-box:hover.project-box > h3,
 .project-box:hover.project-box >label{
     color: #fff;
-    z-index: 9;
+    z-index: 2;
 }                 
