@@ -398,10 +398,82 @@ i{
     transition: all 0.5s ease ;
     font-weight: 500;
 }
-.skill{
+.skills{
     position: relative;
     width: 100%;
     max-width: 600px;
     background: transparent;
-    box-shadow: 1px 8px 10px 2px;
+    box-shadow: 1px 2px var(--fist-shadow);
+    padding: 10px, 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    
+}
+.skills .skil-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skil-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.skil-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skil-box .skil-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #8749f2;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skil-per.HTML{
+    animation-delay: 0.1s;
+    width: 60%;
+}
+.skil-per.CSS{
+    animation-delay: 0.1s;
+    width: 60%;
+}
+.skil-per.JavaScript{
+    animation-delay: 0.1s;
+    width: 40%;
+}
+.skil-per.PYTHON{
+    animation-delay: 0.1s;
+    width: 2%;
+}
+.skil-per.Reactjs{
+    animation-delay: 0.1s;
+    width: 2%;
+}
+
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skil-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 15px;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 20px;
+    background: #8749f2;
+    z-index: 1;
 }
